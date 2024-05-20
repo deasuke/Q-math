@@ -1,0 +1,29 @@
+\documentclass[a4j,dvipdfmx]{jsarticle}
+\usepackage{wrapfig}
+\usepackage[dvips]{graphicx}
+\usepackage{listings,jvlisting}
+\usepackage{setspace,enumerate,amsmath,amssymb,amsthm,qexam,graphicx,psfrag}
+\usepackage{gensymb}
+\newcommand{\answer}[1]{\begin{spacing}{0}\questionNoSkip{#1}\end{spacing}}
+\newcommand{\vc}[1]{\overrightarrow{#1}}
+\newcommand{\para}{/\!/}
+\newcommand{\vvec}[2]{\left(\begin{array}{c}#1\\#2\end{array}\right)}
+\newcommand{\symat}[3]{\left(\begin{array}{cc}#1&#2\\#2&#3\end{array}\right)}
+
+\newcommand{\chart}[3]{
+  \begin{wrapfigure}{l}[0pt]{#1 \textwidth}\centering\includegraphics[#2]{#3}\end{wrapfigure}}
+\newcommand{\divh}[0]{\parbox[t]{\dimexpr\columnwidth-\leftmargini}}
+
+\begin{document}
+\questionNoSkip{問}
+\divh{\chart{0.6}{width=10cm}{fan-0.mps}
+図の$AE$の長さを根号や逆三角関数を使わないで表して下さい。\\
+
+ただし、$BCD$は$O$を中心とする円の円弧であり、
+$$\angle BAO = \angle R,$$
+$$ \angle BOC = \angle COD = \angle DOE,$$
+$$ OA=1, OB=2\sqrt7$$
+であるとします。
+}
+
+\end{document}
